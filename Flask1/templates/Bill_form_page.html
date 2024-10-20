@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/main.css">
+</head>
+<body>
+<!--Mycode-->
+<h2>The Bill Form Page</h2>
+<p>fill in the form and click the button for results</p>
+<!--action is added in from tag,where clicking on sumbitfield button it will go assigned url-->
+<!--method is used to define whether results page is going to get or post values in there-->
+<form action ="/results" method="post">
+{{billForm.bill.label}} {{billForm.bill}}
+<br>
+{{billForm.period.label}} {{billForm.period}}
+<hr>
+    {{billForm.Name1.label}} {{billForm.Name1}}
+    <br>
+    {{billForm.days_in_the_house1.label}} {{billForm.days_in_the_house1}}
+    <hr>
+    {{billForm.Name2.label}} {{billForm.Name2}}
+    <br>
+    {{billForm.days_in_the_house2.label}} {{billForm.days_in_the_house2}}
+    <br>
+    {{billForm.Submit}}
+</form>
+<!--My code-->
+</body>
+</html>

@@ -1,0 +1,20 @@
+Title: Flatmates_bill
+Description:The app gets inputs as the names of the flatmates and how many days they stayed in the flat,
+the total bill for the particular period and returns how much they have to pay.It should generate a pdf file
+where it has flatmates names and how much they have to pay,total bill and the period of the bill.
+objects:
+        flatmates:
+                names
+                no of days stayed
+
+        bill:
+            total bill
+            period
+            pays(flatmates)
+
+        pdf:
+            name
+            generate(flatmate1,flatmate2,bill)
+
+
+
