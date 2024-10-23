@@ -1,0 +1,11 @@
+Title:Instant Dictionary Webapp
+Description:to create a website which returns synonyms of the word as soon as when user finished typing.
+for this website we are going to have navigation bar,home,dictionary and about page.
+Classes required:
+            Definition
+                Term
+                get()
+            NavBar
+            HomePage
+            DictionaryPage
+            AboutPage
