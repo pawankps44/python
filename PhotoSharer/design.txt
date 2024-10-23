@@ -1,0 +1,12 @@
+Name:Photo Sharer App
+Description:An App which allows user to use camera to take picture,generate shareable link and share it to the web.
+objects:
+        Camera:
+            Start()
+            Stop()
+            capture()
+
+        FileSharer:
+            Filpath
+            API
+            share()

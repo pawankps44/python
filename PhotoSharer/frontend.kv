@@ -1,0 +1,53 @@
+<First_screen>:
+    GridLayout:
+        padding:10
+        spacing:10
+        cols:1
+        Camera:
+            id : camera
+            resolution : (640,400)
+            play : False
+            size_hint_y:0.8
+        Button:
+            id : button
+            text: 'Start'
+            on_press : root.Start() if root.ids.camera.play == False else root.Stop()
+            size_hint_y:0.1
+        Button:
+            text:'capture'
+            on_press : root.Capture()
+            size_hint_y:0.1
+
+<ImageScreen>:
+    GridLayout:
+        padding:10
+        spacing :10
+        cols:1
+        Image:
+            id:img
+            size_hint_y:0.7
+        Button:
+            text : 'Generate Link'
+            on_press : root.capture_link()
+            size_hint_y:0.1
+        Label:
+            id: link
+            text : ''
+            size_hint_y:0.1
+        GridLayout:
+            cols:2
+            size_hint_y:0.1
+            Button:
+                text:'copy link'
+                on_press : root.copy_url()
+            Button:
+                text:'open link '
+                on_press : root.open_url()
+
+<Rootwidget>:
+    First_screen:
+        id : first_screen
+        name : 'first_screen'
+    ImageScreen:
+        id : image_screen
+        name : 'image_screen'
