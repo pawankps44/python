@@ -1,0 +1,18 @@
+Title : cinema booking app
+Description : An app where user can book a cinema ticket when the seat is free and he has balance in his card.if the ticket is booked,a pdf should be generated after the ticket booking.
+objects:user,seat,card,Ticket
+user:
+    user
+seat:
+    db_connection
+    seat_id
+    seat_price
+    seat_availability()
+card:
+    db_connection
+    card_num
+    card_ccv_num
+    card_bal()
+ticket:
+    ticket_id
+    pdf()
